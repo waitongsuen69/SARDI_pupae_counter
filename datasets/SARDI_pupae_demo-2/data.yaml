@@ -1,0 +1,5 @@
+names:
+- pupae
+nc: 1
+train: /Users/nardo/Desktop/2022_2/INTERN/SARDI_pupae_counter/datasets/SARDI_pupae_demo-2/train/images
+val: /Users/nardo/Desktop/2022_2/INTERN/SARDI_pupae_counter/datasets/SARDI_pupae_demo-2/valid/images
