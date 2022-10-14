@@ -1,0 +1,16 @@
+dataset:
+rf = Roboflow(api_key="N6BLYmALrZnv9R94uWiQ")
+project = rf.workspace("university-of-adelaide-wt6zr").project("10_10")
+dataset = project.version(1).download("yolov5")
+
+train setting:
+!python train.py --img 1024 --batch 32 --epochs 400 --data {dataset.location}/data.yaml --weights yolov5s.pt --cache
+
+detecting setting:
+model = 37
+only_show_box = True
+back_up = True
+img_size = 4096
+confidence = 0.5
+iou_value = 0.5
+source = dataset.location+"/test/images"

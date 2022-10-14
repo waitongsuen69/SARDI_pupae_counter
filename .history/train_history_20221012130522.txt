@@ -1,0 +1,8 @@
+dataset:
+rf = Roboflow(api_key="N6BLYmALrZnv9R94uWiQ")
+project = rf.workspace("university-of-adelaide-wt6zr").project("10_10")
+dataset = project.version(1).download("yolov5")
+
+train setting:
+
+detecting setting:
